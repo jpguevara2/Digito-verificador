@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/funciones.js"></script>
+    <script src="./js/RutValidador.js"></script>
+
+</head>
+<body class="panel">
+    <center><h1>Numero Verificador de Rut</h1></center><br>
+    <form action="formulario" method="post">
+   <center><pre>   Rut:<input type="text" id="rut" name="rut" required minlength="7" maxlength="8" size="6" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">   Digito Verificador:<input  disabled type="text" id="dv" name="dv" required minlength="1" maxlength="1" size="1"></pre ></center> 
+    <center><pre><button id="btnrut" class="btn btn-succes" type="button" onclick="validarRut()">Verificar</button>  <input id="btnborrar" type="reset" value="Borrar"></pre></center>
+    </form>
+</body>
+</html>
